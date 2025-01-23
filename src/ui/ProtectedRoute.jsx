@@ -12,6 +12,7 @@ const FullPage = styled.div`
     justify-content: center;
 `
 
+
 export default function ProtectedRoute({ children }){
     const navigate = useNavigate();
 
@@ -26,7 +27,5 @@ export default function ProtectedRoute({ children }){
             <Spinner />
         </FullPage>);
     }
-
-    
     if(isAuthenticated) return children;
 }

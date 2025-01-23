@@ -10,7 +10,6 @@ import { useCreateCabin } from "./useCreateCabin";
 import { useEditCabin } from "./useEditCabin";
 
 function CreateCabinForm({ cabinToEdit = {}, onCloseModal }) {
-
   const { isCreating, createCabin } = useCreateCabin();
   const {isEditing, editCabin } = useEditCabin();
   const isWorking = isCreating || isEditing;
